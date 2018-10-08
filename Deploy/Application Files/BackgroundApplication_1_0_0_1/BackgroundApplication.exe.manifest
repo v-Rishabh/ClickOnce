@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="BackgroundApplication.exe" version="1.0.0.1" publicKeyToken="9b3cde83f8800d14" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="BackgroundApplication" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="BackgroundApplication.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BackgroundApplication.exe" size="451040">
+      <assemblyIdentity name="BackgroundApplication" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wr6yi8lSlkV2D8N8c8+mr0juzhTF+IqzcLAT1Lrz1Bk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="BackgroundApplication.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=LAPTOP-DBG2548V\risha" issuerKeyHash="e8880688586348d4be4c6d7b909b7c08c1c4aca0" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>10eI/wBwZBF8Yxca7Ou7T4MEGfwCvpVpWmd5TNjAU2s=</DigestValue></Reference></SignedInfo><SignatureValue>TSZTz1/qoZ1/+ZM+Q9US0IaVs77CLQjgS25LoYeRAZICmpEEq7rtPQj03MZnXBJkD3NfitQvy/haPJ8W/mu7IMUPnecSei4uKv24Ui36PvtUl+C+9B1lskRpUfMigO/iOl1JNTDAaSvtgw6PS5816y0N5ihahMjKMWF9hFCpU6g=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>+G/nmmR32H/v9bDcvO0OmmNoEXSYmDyz4y2TNYj+H9MMshZV0z5zSdZUA6V9an4grCm8RVUk80MO5Qz8NPNPoPBjDuTsg0pvBMTa39EoQJoFfkQiV5PRgH0gLv57otUs6jT3TXnS84nLBeLA81+rX64hEz889+NMdG9eJYWAzO0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="6b53c0d84c79675a6995be02fc1904834fbbebec1a17637c11647000ff8847d7" Description="" Url=""><as:assemblyIdentity name="BackgroundApplication.exe" version="1.0.0.1" publicKeyToken="9b3cde83f8800d14" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LAPTOP-DBG2548V\risha</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>H7MDj0iTvv1fAXncKhuju4PHq3c96IM2zCQSC+i1XqU=</DigestValue></Reference></SignedInfo><SignatureValue>W/REXzjhBZh6iuqqdVZCCfN1VpgGKFvaAeVm6la8F0L0VaejOYA5j7BnW7F5CM3AMWjweppx9sEHr8Ae+4ztGJO4hgH/9ws57csoZ5YapTDag2g4va9EQoq3nRPq/oybNebxbDpo282hKQI6BFcsroyiRS5m4X5V+wzaVkm4fLA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>+G/nmmR32H/v9bDcvO0OmmNoEXSYmDyz4y2TNYj+H9MMshZV0z5zSdZUA6V9an4grCm8RVUk80MO5Qz8NPNPoPBjDuTsg0pvBMTa39EoQJoFfkQiV5PRgH0gLv57otUs6jT3TXnS84nLBeLA81+rX64hEz889+NMdG9eJYWAzO0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQd+3ZnOT9VrdMdP6UqS5W7jANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQBEAEIARwAyADUANAA4AFYAXAByAGkAcwBoAGEwHhcNMTgxMDA4MDgwNDQ3WhcNMTkxMDA4MTQwNDQ3WjA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQBEAEIARwAyADUANAA4AFYAXAByAGkAcwBoAGEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAPhv55pkd9h/7/Ww3LztDppjaBF0mJg8s+MtkzWI/h/TDLIWVdM+c0nWVAOlfWp+IKwpvEVVJPNDDuUM/DTzT6DwYw7k7INKbwTE2t/RKECaBX5EIleT0YB9IC7+e6LVLOo090150vOJywXiwPNfq1+uIRM/PPfjTHRvXiWFgMztAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAZFvvEwKl2dpfPneJHn6b3g/p9ff29z7xr/W+Pl78EtezhvHr/4RG7pZ2spELhpH+A7MfBWXcdhq/VxceTWNXiTU7qGdlAlX2Cj7ECq2b1rVJbwZHzJMAudA8uzgF9Ov9n/FtWGTwSWH+eqgx5qfV5Ti142avujXX/rVdfQCP5NQ=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
